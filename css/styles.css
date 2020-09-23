@@ -820,7 +820,7 @@ footer {
   font-style: normal;
   color: var(--white-color);
 }
-.address__text-link {
+.addresstext-link {
   display: block;
   font-style: normal;
   color: var(--main-text-color);
