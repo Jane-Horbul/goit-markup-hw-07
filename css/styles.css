@@ -381,11 +381,7 @@ h4 {
   margin-right: auto;
   padding-top: 215px;
 }
-.sorter-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
+
 .projects-item {
   width: calc((100% - 30px * 3) / 3);
   margin-right: 30px;
@@ -828,4 +824,10 @@ footer {
 .address {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+/*portfolio page*/
+.sorter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
