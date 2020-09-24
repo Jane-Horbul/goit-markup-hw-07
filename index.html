@@ -448,65 +448,67 @@
         <!--<div class="backdrop" data-backdrop>-->
         <div class="container">
             <div class="modal">
-                <button class="btn-modal" data-close-modal>
-                    <svg class="btn__close">
+                <button class="modal__btn" data-close-modal>
+                    <svg class="modal__btn-close">
                         <use href="./img/speite-for-forms.svg#btn-close"></use>
                     </svg>
                 </button>
 
-                <form class="modal-form">
-                    <span class="modal-title">Оставьте свои данные, мы вам перезвоним</span>
-                    <label for="user-name" class="form-field-label">
-                        <span class="form-field-title">Имя</span>
-                        <div class="form-field">
-                            <input type="text" name="user-name" id="user-name" class="form-field-input" required />
-                            <svg class="form-field-icon">
+                <form class="feedback-form">
+                    <span class="feedback-form__title">Оставьте свои данные, мы вам перезвоним</span>
+                    <label for="user-name" class="feedback-form__field--label">
+                        <span class="feedback-form__field--title">Имя</span>
+                        <div class="feedback-form__field">
+                            <input type="text" name="user-name" id="user-name" class="feedback-form__input" required />
+                            <svg class="feedback-form__icon">
                                 <use href="./img/speite-for-forms.svg#modal-name-icon"></use>
                             </svg>
                         </div>
                     </label>
-                    <label for="user-phone" class="form-field-label">
-                        <span class="form-field-title">Телефон</span>
-                        <div class="form-field">
-                            <input type="tel" name="user-phone" id="user-phone" class="form-field-input" required />
-                            <svg class="form-field-icon">
+                    <label for="user-phone" class="feedback-form__field--label">
+                        <span class="feedback-form__field--title">Телефон</span>
+                        <div class="feedback-form__field">
+                            <input type="tel" name="user-phone" id="user-phone" class="feedback-form__input" required />
+                            <svg class="feedback-form__icon">
                                 <use href="./img/speite-for-forms.svg#modal-phone-icon"></use>
                             </svg>
                         </div>
                     </label>
-                    <label for="user-email" class="form-field-label">
-                        <span class="form-field-title">Почта</span>
-                        <div class="form-field">
-                            <input type="email" name="user-email" id="user-email" class="form-field-input" required />
-                            <svg class="form-field-icon">
+                    <label for="user-email" class="feedback-form__field--label">
+                        <span class="feedback-form__field--title">Почта</span>
+                        <div class="feedback-form__field">
+                            <input type="email" name="user-email" id="user-email" class="feedback-form__input"
+                                required />
+                            <svg class="feedback-form__icon">
                                 <use href="./img/speite-for-forms.svg#modal-mail-icon"></use>
                             </svg>
                         </div>
                     </label>
                     <label>
-                        <span class="form-field-title">Комментарий</span>
-                        <div class="form-field-message">
-                            <textarea name="user-message" class="form-field-comment" placeholder="Введите текст"
-                                rows="3"></textarea>
+                        <span class="feedback-form__field--title">Комментарий</span>
+                        <div class="feedback-form__field-message">
+                            <textarea name="user-message" class="feedback-form__field-message--comment"
+                                placeholder="Введите текст" rows="3"></textarea>
                         </div>
                     </label>
                     <div class="modal-checkbox">
-                        <label for="checkbox" class="checkbox-label">
+                        <label for="checkbox" class="modal-checkbox__label">
 
                             <input type="checkbox" class="checkbox is-hidden" id="checkbox" checked />
 
-                            <svg class="checkbox-icon">
+                            <svg class="modal-checkbox__icon">
                                 <use href="./img/speite-for-forms.svg#modal-yes-icon"></use>
                             </svg>
 
-                            <div class="modal-checkbox">Соглашаюсь с рассылкой и принимаю
-                                <a href=""><span class="link-agree"><u>Условия договора</u></span></a>
+                            <div class="modal-checkbox__agree">Соглашаюсь с рассылкой и принимаю
+                                <a class="modal-checkbox--text" href=""><span
+                                        class="modal-checkbox--link-agree"><u>Условия договора</u></span></a>
                             </div>
                         </label>
                     </div>
 
-                    <button type="submit" class="modal-btn-submit">
-                        <span class="modal-btn-submit-text">Отправить</span></button>
+                    <button type="submit" class="feedback-form__btn-submit">
+                        <span class="feedback-form__btn-submit-text">Отправить</span></button>
                 </form>
             </div>
         </div>
