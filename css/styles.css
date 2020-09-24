@@ -1,13 +1,3 @@
-:root {
-  --title-text-color: #212121;
-  --main-text-color: #757575;
-  --white-color: #fff;
-  --assent-color: #2196f3;
-  --logo-color: #000;
-  --bg-color: #f5f4fa;
-  --secondr-bg-color: #2f303a;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -19,8 +9,8 @@ html {
 }
 
 body {
-  color: var(--main-text-color);
-  background-color: var(--white-color);
+  color: $main-text-color;
+  background-color: $white-color;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -38,7 +28,7 @@ img {
 }
 .link:hover,
 .link:focus {
-  color: var(--assent-color);
+  color: $assent-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 textarea {
@@ -80,35 +70,35 @@ textarea {
 
 h1 {
   font-size: 44px;
-  color: var(--white-color);
+  color: $white-color;
   letter-spacing: 0.06em;
 }
 h2 {
   font-size: 36px;
-  color: var(--title-text-color);
+  color: $title-text-color;
   text-align-last: center;
 }
 h3 {
   font-size: 16px;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 h4 {
   font-size: 14px;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 /*logo*/
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  color: var(--logo-color);
+  color: $logo-color;
   font-style: normal;
   margin-right: 95px;
 }
 .logo__part {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  color: var(--assent-color);
+  color: $assent-color;
 }
 /*menu*/
 .navigation {
@@ -122,11 +112,11 @@ h4 {
 .contacts-item:focus,
 .link:hover,
 .link:focus {
-  color: var(--assent-color);
+  color: $assent-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu--main {
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-weight: 700;
   font-size: 14px;
 }
@@ -135,7 +125,7 @@ h4 {
 }
 
 .menu__item--active {
-  color: var(--assent-color);
+  color: $assent-color;
 }
 .menu__item--active {
   position: relative;
@@ -147,23 +137,23 @@ h4 {
   bottom: -43px;
   width: 100%;
   height: 2px;
-  background-color: var(--assent-color);
+  background-color: $assent-color;
   border-radius: 2px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__contacts-item {
-  color: var(--main-text-color);
+  color: $main-text-color;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
 .menu__contacts-item:hover .phone {
-  fill: var(--assent-color);
+  fill: $assent-color;
 }
 .menu__contacts-item:hover .e-mail {
-  fill: var(--assent-color);
+  fill: $assent-color;
 }
 
 /*main content*/
@@ -195,7 +185,7 @@ h4 {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: $white-color;
 }
 .form-footer-field {
   width: 358px;
@@ -234,7 +224,7 @@ h4 {
   margin-bottom: auto;
   margin-right: 0px;
   padding-right: 0px;
-  fill: var(--white-color);
+  fill: $white-color;
 }
 
 .hero__slidebar {
@@ -253,9 +243,9 @@ h4 {
   background-position: center;
 }
 .btn {
-  background-color: var(--bg-color);
+  background-color: $bg-color;
   border: none;
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-size: 16px;
   border-radius: 4px;
   margin-right: 10px;
@@ -265,15 +255,15 @@ h4 {
   outline-width: 0px;
 }
 .btn:hover {
-  background-color: var(--assent-color);
-  color: var(--white-color);
+  background-color: $assent-color;
+  color: $white-color;
   box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn__main {
-  background-color: var(--assent-color);
+  background-color: $assent-color;
   border: none;
-  color: var(--bg-color);
+  color: $bg-color;
   font-size: 16px;
   border-radius: 4px;
   margin-top: 45px;
@@ -287,9 +277,9 @@ h4 {
   width: 200px;
   height: 50px;
   margin-top: 42px;
-  background-color: var(--assent-color);
+  background-color: $assent-color;
   border: none;
-  color: var(--white-color);
+  color: $white-color;
   font-size: 16px;
   border-radius: 4px;
   text-align: center;
@@ -369,13 +359,13 @@ h4 {
 }
 .services__title {
   text-transform: uppercase;
-  color: var(--white-color);
+  color: $white-color;
   text-align: center;
   padding-top: 25px;
 }
 /*Our team*/
 .team {
-  background: var(--bg-color);
+  background: $bg-color;
   padding-top: 95px;
 }
 
@@ -397,7 +387,7 @@ h4 {
   text-align: center;
 }
 .team__card {
-  background: var(--white-color);
+  background: $white-color;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -429,11 +419,11 @@ h4 {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--assent-color);
+  background-color: $assent-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sl-icon__link:hover .sl-icon {
-  fill: var(--white-color);
+  fill: $white-color;
 }
 
 /*Regular customers*/
@@ -466,7 +456,7 @@ h4 {
 }
 .customers__link:focus,
 .customers__link:hover {
-  border: 1px solid var(--assent-color);
+  border: 1px solid $assent-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -481,7 +471,7 @@ h4 {
 }
 .customers__link:focus .customers__logo,
 .customers__link:hover .customers__logo {
-  fill: var(--assent-color);
+  fill: $assent-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
 }
@@ -495,7 +485,7 @@ h4 {
   padding-right: 0px;
 }
 .sl__title {
-  color: var(--white-color);
+  color: $white-color;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -519,16 +509,16 @@ h4 {
 .sl__footer-icon {
   width: 20px;
   height: 20px;
-  fill: var(--white-color);
+  fill: $white-color;
 }
 .sl__footer-link:hover {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--assent-color);
+  background-color: $assent-color;
 }
 .sl__footer-link:hover .sl__footer-icon {
-  background-color: var(--assent-color);
+  background-color: $assent-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*icons in modal form*/
@@ -537,31 +527,31 @@ h4 {
   height: 12px;
   margin-bottom: -2px;
   margin-right: 10px;
-  fill: var(--main-text-color);
+  fill: $main-text-color;
 }
 .phone {
   width: 12px;
   height: 16px;
   margin-bottom: -3px;
   margin-right: 10px;
-  fill: var(--main-text-color);
+  fill: $main-text-color;
 }
 /*footer*/
 
 footer {
   display: block;
   text-decoration: none;
-  background-color: var(--secondr-bg-color);
+  background-color: $secondr-bg-color;
 }
 
 .address__text {
   font-style: normal;
-  color: var(--white-color);
+  color: $white-color;
 }
 .address__text-link {
   display: block;
   font-style: normal;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 .address {
   margin-top: 60px;
@@ -628,7 +618,7 @@ footer {
 }
 
 .project__overlay-text {
-  color: var(--white-color);
+  color: $white-color;
   padding: 63px 24px;
   margin: 0;
   font-family: Roboto;
@@ -648,7 +638,7 @@ footer {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background-color: var(--white-color);
+  background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -658,7 +648,7 @@ footer {
   position: absolute;
   right: 10px;
   top: 10px;
-  background-color: var(--white-color);
+  background-color: $white-color;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -673,7 +663,7 @@ footer {
 }
 .modal__btn-close:focus,
 .modal__btn-close:hover {
-  fill: var(--assent-color);
+  fill: $assent-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*feedback form*/
@@ -695,14 +685,14 @@ footer {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 .feedback-form__field--title {
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 .feedback-form__field--label {
   position: relative;
@@ -725,7 +715,7 @@ footer {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  fill: var(--title-text-color);
+  fill: $title-text-color;
 }
 .feedback-form__icon {
   width: 18px;
@@ -734,10 +724,10 @@ footer {
 .feedback-form__field:focus,
 .feedback-form__field:hover {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid var(--assent-color);
+  border: 1px solid $assent-color;
 }
 .feedback-form__field:hover .feedback-form__icon {
-  fill: var(--assent-color);
+  fill: $assent-color;
 }
 .feedback-form__field-message {
   width: 448px;
@@ -748,7 +738,7 @@ footer {
 .feedback-form__field-message:focus,
 .feedback-form__field-message:hover {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid var(--assent-color);
+  border: 1px solid $assent-color;
 }
 .feedback-form__field-message--comment {
   width: 425px;
@@ -790,7 +780,7 @@ footer {
   display: inline-block;
   width: 16px;
   height: 16px;
-  border: 3px solid var(--title-text-color);
+  border: 3px solid $title-text-color;
   border-radius: 2px;
   margin-right: 10px;
   vertical-align: middle;
@@ -799,9 +789,9 @@ footer {
 .checkbox:checked ~ div::before {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-  background: var(--assent-color);
+  background: $assent-color;
   border-radius: 2px;
-  border: 2px solid var(--assent-color);
+  border: 2px solid $assent-color;
 }
 .modal-checkbox__icon {
   position: absolute;
@@ -812,7 +802,7 @@ footer {
   z-index: 3;
 }
 .modal-checkbox--link-agree {
-  color: var(--assent-color);
+  color: $assent-color;
 }
 .feedback-form__btn-submit {
   display: flex;
@@ -821,9 +811,9 @@ footer {
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px;
-  background-color: var(--assent-color);
+  background-color: $assent-color;
   border: none;
-  color: var(--white-color);
+  color: $white-color;
   font-size: 16px;
   border-radius: 4px;
   text-align: center;
