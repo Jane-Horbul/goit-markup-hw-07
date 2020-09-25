@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -85,6 +84,17 @@ h4 {
   color: #212121;
 }
 
+.page__header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+}
+
+.page__header .flexbox {
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -157,11 +167,27 @@ h4 {
   letter-spacing: 0.02em;
 }
 
-.menu__contacts-item:hover .phone {
+.menu__icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-bottom: -2px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.menu__icon-phone {
+  width: 12px;
+  height: 16px;
+  margin-bottom: -3px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.menu__contacts-item:hover .menu__icon-phone {
   fill: #2196f3;
 }
 
-.menu__contacts-item:hover .e-mail {
+.menu__contacts-item:hover .menu__icon-mail {
   fill: #2196f3;
 }
 
@@ -663,6 +689,63 @@ footer {
   border-radius: 4px;
 }
 
+.form-footer {
+  display: flex;
+  margin-top: 75px;
+}
+
+.form-footer__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.form-footer__field {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-right: 12px;
+  outline-width: 0px;
+}
+
+.form-footer--hint::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-footer--hint {
+  width: 330px;
+  border: 0px;
+  padding: 0px;
+  margin-top: 15px;
+  margin-left: 16px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  outline-width: 0px;
+}
+
+.form-footer__icon {
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0px;
+  padding-right: 0px;
+  fill: #fff;
+}
+
 .modal-checkbox {
   position: relative;
   width: 425px;
@@ -796,55 +879,11 @@ footer {
   color: rgba(117, 117, 117, 0.5);
 }
 
-/*Our advantages*/
-/*What we do*/
-/*Regular customers*/
-/*social icons in footer*/
-/*icons in menu - переіменувати і винести у відповідний паршал*/
-.e-mail {
-  width: 16px;
-  height: 12px;
-  margin-bottom: -2px;
-  margin-right: 10px;
-  fill: #757575;
-}
-
-.phone {
-  width: 12px;
-  height: 16px;
-  margin-bottom: -3px;
-  margin-right: 10px;
-  fill: #757575;
-}
-
-/*footer*/
-/*portfolio page*/
-/*Sorter*/
 .sorter {
   display: flex;
   justify-content: center;
 }
 
-/*projects*/
-/*modal window*/
-/*feedback form*/
-/*modal form icons*/
-/*modal-checkbox*/
-/*назви класів не замінені по БЕМ*/
-.page__header {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #ececec;
-}
-
-.page__header .flexbox {
-  justify-content: flex-end;
-  align-items: center;
-}
-
-/*logo*/
-/*menu*/
-/*main content*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -854,71 +893,14 @@ footer {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.modal-form-footer {
-  display: flex;
-  margin-top: 75px;
-}
-
-.modal-form-footer-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.form-footer-field {
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  margin-top: 20px;
-  margin-right: 12px;
-  outline-width: 0px;
-}
-
-.form-footer-hint::placeholder {
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-footer-hint {
-  width: 330px;
-  border: 0px;
-  padding: 0px;
-  margin-top: 15px;
-  margin-left: 16px;
-  margin-right: 0px;
-  margin-bottom: 15px;
-  background-color: transparent;
-  outline-width: 0px;
-}
-
-.modal-footer-icon {
-  width: 24px;
-  height: 24px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 0px;
-  padding-right: 0px;
-  fill: #fff;
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */

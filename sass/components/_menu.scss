@@ -47,9 +47,23 @@
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.menu__contacts-item:hover .phone {
+.menu__icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-bottom: -2px;
+  margin-right: 10px;
+  fill: $main-text-color;
+}
+.menu__icon-phone {
+  width: 12px;
+  height: 16px;
+  margin-bottom: -3px;
+  margin-right: 10px;
+  fill: $main-text-color;
+}
+.menu__contacts-item:hover .menu__icon-phone {
   fill: $assent-color;
 }
-.menu__contacts-item:hover .e-mail {
+.menu__contacts-item:hover .menu__icon-mail {
   fill: $assent-color;
 }

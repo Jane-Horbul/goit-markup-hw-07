@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./base/common";
+@import "./components/header";
 @import "./components/logo";
 @import "./components/menu";
 @import "./components/buttons";
@@ -12,125 +13,8 @@
 @import "./layouts/footer";
 @import "./components/modal";
 @import "./components/feedback-form";
+@import "./components/form-footer";
 @import "./components/modal-checkbox";
 @import "./components/modal-form-icons";
-
-.page__header {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #ececec;
-}
-.page__header .flexbox {
-  justify-content: flex-end;
-  align-items: center;
-}
-
-/*icons in menu - переіменувати і винести у відповідний паршал*/
-.e-mail {
-  width: 16px;
-  height: 12px;
-  margin-bottom: -2px;
-  margin-right: 10px;
-  fill: $main-text-color;
-}
-.phone {
-  width: 12px;
-  height: 16px;
-  margin-bottom: -3px;
-  margin-right: 10px;
-  fill: $main-text-color;
-}
-/*footer*/
-
-/*portfolio page*/
-/*Sorter*/
-.sorter {
-  display: flex;
-  justify-content: center;
-}
-/*projects*/
-
-/*modal window*/
-
-/*feedback form*/
-
-/*modal form icons*/
-
-/*modal-checkbox*/
-
-/*назви класів не замінені по БЕМ*/
-
-/*logo*/
-
-/*menu*/
-
-/*main content*/
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-/*modal-form-footer*/
-.modal-form-footer {
-  display: flex;
-  margin-top: 75px;
-}
-.modal-form-footer-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $white-color;
-}
-.form-footer-field {
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  margin-top: 20px;
-  margin-right: 12px;
-  outline-width: 0px;
-}
-.form-footer-hint::placeholder {
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.form-footer-hint {
-  width: 330px;
-  border: 0px;
-  padding: 0px;
-  margin-top: 15px;
-  margin-left: 16px;
-  margin-right: 0px;
-  margin-bottom: 15px;
-  background-color: transparent;
-  outline-width: 0px;
-}
-.modal-footer-icon {
-  width: 24px;
-  height: 24px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 0px;
-  padding-right: 0px;
-  fill: $white-color;
-}
+@import "./components/sorter";
+@import "./components/backdrop";
